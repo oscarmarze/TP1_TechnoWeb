@@ -1,0 +1,17 @@
+.Intro{
+    margin: auto;
+    text-align: center;
+}
+.cursus{
+    width: 25%;
+    background-color: palegreen;
+    position: relative;
+    float: left;
+    
+}
+.infos{
+    width: 75%;
+    background-color: orange;
+    position: relative;
+    float: right;
+}
