@@ -1,19 +1,7 @@
-body {
-	background: linear-gradient(-45deg, #e16131, #313638);
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
-}
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+
+nav{
+    background-color: #313638;
 }
 
 .Intro{
@@ -43,7 +31,7 @@ body {
 
 h1{
     font-style: bold;
-    text-decoration: underline overline #e16131;
+    text-decoration: underline  #e16131;
     
 }
 .objet{
@@ -60,6 +48,24 @@ h1{
 .princip{
     margin-top: 5%;
     background-color: #313638;
+    background: linear-gradient(-45deg,#ffffff, #e16131, #313638,#000000);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+.princip2{
+    background-color: #313638;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .Categorie{
     margin-top: 3%;
@@ -80,3 +86,15 @@ h1{
     background-color: #e16131;
     
 }
+
+#scroll_to_top {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+    background-color: transparent;
+  }
+  #scroll_to_top img {
+    width: 50px;
+  }

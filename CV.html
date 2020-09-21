@@ -8,17 +8,63 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </head>
     <header>
-        <nav class="navbar fixed-top navbar-light bg-light">
-            <a href="#Pro"><h5>Expérience professionnelle</h5></a>
-            <a href="#Formation"><h5>Formation</h5></a>
-            <a href="#+"><h5>En apprendre plus sur Oscar</h5></a>
-            <a href="#Pro"><h5>Me contacter</h5></a>
+        <nav class="navbar fixed-top navbar-light">
+            <a href="#Pro" class="badge badge-light"><h5>Expérience professionnelle</h5></a>
+            <a href="#Formation" class="badge badge-light"><h5>Formation</h5></a>
+            <a href="#+" class="badge badge-light"><h5>En apprendre plus sur Oscar</h5></a>
+              <a class="badge badge-light" data-toggle="modal" data-target="#exampleModal">
+                <h5>Me contacter</h5>
+              </a>
+           
         </nav>
-    </header>
-    <body class="princip">
+        <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Me contacter</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Nom</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Prénom</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Adresse Mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Votre message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger btn-lg" data-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-outline-success btn-lg">M'envoyer un mail</button>
+        </div>
+      </div>
+    </div>
+  </div>
         
+    </header>
+    <body id="haut" class="princip">
+    <section class="princip2">
        <section class="Intro">
            
         <h1>Oscar Marze</h1>
@@ -60,6 +106,20 @@
                    <li> Connaissaince sur Photshop</li>
                 </ul>
             </section>
+            <section class="contact">
+                <h2> Comment me joindre</h2>
+                <ul>
+                <li><a href="https://www.linkedin.com/in/oscar-marze-bba449176/" class="badge badge-light"><img class ="img-thumbnail" src="linkedinmieux.png" width="40" height="20"></a></li>
+                <li> +33 6 32 30 41 99</li>
+                <li> oscar@marze.org </li>
+                </ul>
+
+               
+
+  
+  
+
+            </section>
              
            </section>
            <section id="Pro" class="cursus">
@@ -79,7 +139,7 @@
                     et la communication avec les utilisateurs sur les stores</p>
             </section>
             <section class="objet">
-                <h2 class="Titre">Oscar Organisation <img class ="img-thumbnail" src="oscarorga.png" width="100" height="50"></h2>
+                <h2 class="Titre">Oscar Organisation <img class ="img-thumbnail" src="oscarorga.png" width="75" height="25"></h2>
                 <h3> Mission d'intérim de Juillet 2018 à aujourd'hui</h3>
                 <p>Différentes missions d'intérim réalisées (logistique, confection, manutention et
                     vente) pour différentes entreprises comme Décathlon, Chanel ou encore Adidas</p>
@@ -132,7 +192,7 @@
                         <img src="espace.jpg" class="item " alt="L'espace" width="70%" height="65%">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>L'espace</h5>
-                            <h3>C'est un sujet très intéressant et fascinant</h3>
+                            <h3>C'est un sujet vaste et mystérieu qui me fascine</h3>
                           </div>
                       </div>
                       <div class="item">
@@ -149,7 +209,15 @@
             </section>
 
         </section>
+        
+       
         </div>
+        
+        </section>
+        <div id="scroll_to_top">
+            <a href="#haut"><img src="fleche2.jpg" alt="Retourner en haut" /></a>
+        </div>
+       
        
 
        
