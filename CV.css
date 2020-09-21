@@ -1,17 +1,82 @@
+body {
+	background: linear-gradient(-45deg, #e16131, #313638);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .Intro{
     margin: auto;
     text-align: center;
+    
+    color: white;
 }
-.cursus{
+.infos{
     width: 25%;
-    background-color: palegreen;
+    background-color: #313638;
+    color: #e16131;
     position: relative;
     float: left;
     
 }
-.infos{
+.cursus{
     width: 75%;
-    background-color: orange;
+    background-color: white;
+    color: #313638;
     position: relative;
     float: right;
+}
+.corps{
+    background-color: #313638;
+}
+
+h1{
+    font-style: bold;
+    text-decoration: underline overline #e16131;
+    
+}
+.objet{
+    margin-top: 5%;
+}
+.navigation{
+    background-color: red;
+    position: sticky;
+    top: 0;
+}
+.Titre{
+    color: #e16131;
+}
+.princip{
+    margin-top: 5%;
+    background-color: #313638;
+}
+.Categorie{
+    margin-top: 3%;
+}
+
+.item{
+    margin: auto;
+}
+.Moi{
+    margin-top: 5%;
+    
+}
+.Carousel{
+    margin-top: 3%;
+}
+
+.ligne{
+    background-color: #e16131;
+    
 }
